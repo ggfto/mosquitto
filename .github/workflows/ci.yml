@@ -31,11 +31,11 @@ jobs:
           context: .
           platforms: linux/amd64,linux/arm64
           push: true
-          tags: user/app:latest
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/mosquitto:latest
       -
         name: Update repo description
         uses: peter-evans/dockerhub-description@v3
         with:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
-          repository: user/app
+          repository: ${{ secrets.DOCKERHUB_USERNAME }}/mosquitto
