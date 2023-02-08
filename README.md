@@ -1,5 +1,7 @@
 # MQTT Server
 
+![ci status](https://github.com/ggfto/mosquitto/actions/workflows/ci.yml/badge.svg?branch=main)
+
 ## English
 
 ### Description
