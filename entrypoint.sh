@@ -14,6 +14,6 @@ if [ ! -f /mosquitto/config/pwfile ]; then
     echo "allow_anonymous true" >> /mosquitto/config/mosquitto.conf
     fi
 else
-echo "pwfile present, skipping credential configuration...
+echo "pwfile present, skipping credential configuration..."
 fi
 exec mosquitto -c /mosquitto/config/mosquitto.conf
